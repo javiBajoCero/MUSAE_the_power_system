@@ -27,7 +27,7 @@ area_singlesolarpanel=2.8;              % [m^2]
 
 Power_single_solar_panel_KW = 0.001*efficiency_panel*efficiency_inverter*area_singlesolarpanel.*solar.optimiced_moving_solar_ALLSKY_SFC_SW_DWN_Wh_m_2_;
 
-number_of_solar_panels=0.8e6;
+number_of_solar_panels=0.8e6+ 1666;
 cost_of_solar=number_of_solar_panels*cost_per_solar_panel_550w;
 total_solar_power=Power_single_solar_panel_KW*number_of_solar_panels;
 
@@ -55,7 +55,7 @@ end
 cp=cp';
 Power_single_wind_turbine_KW=Power_single_wind_turbine_KW.*cp;
 
-number_of_wind_turbines=752;
+number_of_wind_turbines=754;
 cost_of_wind=number_of_wind_turbines*cost_per_wind_turbine_5Mw;
 total_wind_power=Power_single_wind_turbine_KW*number_of_wind_turbines;
 
