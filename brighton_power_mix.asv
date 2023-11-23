@@ -192,9 +192,9 @@ grid on;
 
 %pie chart with the cost
 subplot(3,1,3);
-pie([cost_of_wind available_money cost_nuclear cost_of_solar]);%
+pie([  cost_of_wind available_money cost_nuclear cost_of_solar],{'wind','nuclear','wind',' '});
 title('portion of the budget for each energy source');%name the plot
-legend({'wind','remaining €','nuclear','solar'},'Location','southoutside','Orientation','horizontal')
+
 %average production of each source for each €
 avg_power_solar=mean(total_solar_power);
 how_many_KWperEuro_solar=avg_power_solar/cost_of_solar;%[kw/€]
