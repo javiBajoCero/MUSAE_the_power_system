@@ -18,6 +18,8 @@ investment_per_capita=2000;%€ updated from 1000 to 2000
 
 total_investment=investment_per_capita*population;%€
 
+writematrix(demand.kWhPerCapita.*population,'results/Power_total_demand_KW.xlsx','Sheet',1);
+
 %% solar ()
 cost_per_solar_panel_550w=600;          % [€]
 efficiency_inverter=0.96;               % [%]
