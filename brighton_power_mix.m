@@ -205,3 +205,9 @@ how_many_KWperEuro_wind=avg_power_wind/cost_of_wind;%[kw/€]
 avg_power_nuclear=mean(nuclear_small_generators.Kw);
 how_many_KWperEuro_nuclear=avg_power_nuclear/cost_nuclear;%[kw/€]
 
+figure(2);
+histogram(total_power_difference);
+title('hourly power distribution for one year');%name the plot
+ylabel('Sum of hours');
+xlabel('Specific Power value KW');
+
