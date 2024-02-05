@@ -81,3 +81,14 @@ Power_single_SMR_nuclear_plant_KW= ones([hours_in_the_year,1]).*nuclear_power_pe
 writematrix(Power_single_SMR_nuclear_plant_KW,'results/Power_single_SMR_nuclear_plant_KW.xlsx','Sheet',1);
 
 
+figure();
+plot(Power_single_solar_panel_KW);
+xlabel('hour of the year','FontSize',18);
+ylabel('Power [KW]','FontSize',18);
+title('hourly power production for a single solar panel');%name the plot
+
+figure();
+plot(Power_single_wind_turbine_KW);
+xlabel('hour of the year','FontSize',18);
+ylabel('Power [KW]','FontSize',18);
+title('hourly power production for a single wind turbine');%name the plot
